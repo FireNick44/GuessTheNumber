@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <conio.h>
 #include <cstdlib>
 #include <time.h>
+
+
 void UP1();
 void UP2();
 void UP3();
+int game();
 
 int main()
 {
@@ -16,12 +20,31 @@ int main()
   bool end = false;
   while(!end)
   {
-    int number;
-  
+    int number = 0;
+    int max = 0;
+    int min = 0;
+    int eingabe = 0;
+
+    UP1();
+    UP2();
+
+    eingabe = _getch();
+    if (eingabe == 1) max = eingabe;
+    else if (eingabe == 2) max = eingabe;
+    else if (eingabe == 3) max = eingabe;
+
+    number = rand() % max + 1;
+    
   }
 
 }
 
+int game()
+{
+
+
+
+}
 
 void UP1()
 {
@@ -38,9 +61,9 @@ void UP2()
 {
   printf("\n  Wir Spielen ein Spiel, erraten Sie so schnell wie m\x94glich meine Zahl!\n");
   printf("  W\x84hlen Sie eine schwierigkeit aus:\n\n\n");
-  printf("  1 = Expert:\t Zahlen von 0 bis 30000\n");
-  printf("  2 = Hard  :\t Zahlen von 0 bis 1000\n");
-  printf("  3 = Easy  :\t Zahlen von 0 bis 10\n\n\n");
+  printf("  1 = Expert:\t Zahlen von 1 bis 30000\n");
+  printf("  2 = Hard  :\t Zahlen von 1 bis 1000\n");
+  printf("  3 = Easy  :\t Zahlen von 1 bis 10\n\n\n");
 }
 
 void UP3()
