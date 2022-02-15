@@ -23,20 +23,17 @@ int main()
     int number = 0;
     int max = 0;
     int min = 0;
-    int eingabe = 0;
+    int input = 0;
 
-    UP1();
-    UP2();
+    UP1;
+    UP2;
 
-    eingabe = _getch();
-    if (eingabe == 1) max = eingabe;
-    else if (eingabe == 2) max = eingabe;
-    else if (eingabe == 3) max = eingabe;
-
+    input = _getch();
+    if (input == 1) max = input;
+    else if (input == 2) max = input;
+    else if (input == 3) max = input;
     number = rand() % max + 1;
-    
   }
-
 }
 
 int game()
@@ -48,13 +45,11 @@ int game()
 
 void UP1()
 {
-  printf("\n    .oooooo.                                                   .   oooo                      ooooo      ooo                                .o8                          \n");
-  printf("   d8P'  `Y8b                                                .o8   `888                      `888b.     `8'                               '888                          \n");
-  printf("  888           oooo  oooo   .ooooo.   .oooo.o  .oooo.o    .o888oo  888 .oo.    .ooooo.       8 `88b.    8  oooo  oooo  ooo. .oo.  .oo.    888oooo.   .ooooo.  oooo  d8b\n");
-  printf("  888           `888  `888  d88' `88b d88(  '8 d88('8        888    888P'Y88b  d88' `88b      8   `88b.  8  `888  `888  `888P'Y88bP'Y88b   d88' '88b d88' '88b `888''8P \n");
-  printf("  888     ooooo  888   888  888ooo888 `'Y88b.  `'Y88b.       888    888   888  888ooo888      8     '88b.8   888   888   888   888   888   888   888 888ooo888  888     \n");
-  printf("  `88.    .88'   888   888  888    .o o.  )88b o.  )88b      888 .  888   888  888    .o      8       `888   888   888   888   888   888   888   888 888    .o  888     \n");
-  printf("   `Y8bood8P'    `V88V'V8P' `Y8bod8P' 8''888P' 8''888P'      '888' o888o o888o 'Y8bod8P'     o8o        `8   `V88V'V8P' o888o o888o o888o  `Y8bod8P' `Y8bod8P' d888b    \n\n\n");
+  printf("\n\n     ____                       _____ _            _   _                 _               \n");
+  printf("    / ___|_   _  ___  ___ ___  |_   _| |__   ___  | \x5C | |_   _ _ __ ___ | |__   ___ _ __ \n");
+  printf("   | |  _| | | |/ _ \x5C/ __/ __|   | | | '_ \x5C / _ \x5C |  \x5C| | | | | '_ ` _ \x5C| '_ \x5C / _ \x5C '__|\n");
+  printf("   | |_| | |_| |  __/\x5C__ \x5C__ \x5C   | | | | | |  __/ | |\x5C  | |_| | | | | | | |_) |  __/ |   \n");
+  printf("    \x5C____|\x5C__,_|\x5C___||___/___/   |_| |_| |_|\x5C___| |_| \x5C_|\x5C__,_|_| |_| |_|_.__/ \x5C___|_|   \n\n\n\n");
 }
 
 void UP2()
@@ -68,11 +63,9 @@ void UP2()
 
 void UP3()
 {
-  printf("\n  oooooooooooo                   .o8  \n");
-  printf("  `888'     `8                  '888  \n");
-  printf("   888         ooo. .oo.    .oooo888  \n");
-  printf("   888oooo8    `888P'Y88b  d88' `888  \n");
-  printf("   888    '     888   888  888   888  \n");
-  printf("   888       o  888   888  888   888  \n");
-  printf("  o888ooooood8 o888o o888o `Y8bod88P' \n\n\n");
+  printf("\n\n    _____           _ \n");
+  printf("   | ____|_ __   __| |\n");
+  printf("   |  _| | '_ \x5C / _` |\n");
+  printf("   | |___| | | | (_| |\n");
+  printf("   |_____|_| |_|\x5C__,_|\n\n\n\n");
 }
