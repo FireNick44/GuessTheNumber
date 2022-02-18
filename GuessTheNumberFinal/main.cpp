@@ -10,8 +10,9 @@ void UP1();
 void UP2();
 void UP3();
 void UP4();
-void game();
+void game(int min, int max);
 void custom();
+int get_random(int min, int max);
 
 int main()
 {
@@ -31,10 +32,10 @@ int main()
     UP2();
 
     input = _getch();
-    if      (input == '1') custom();
-    else if (input == '2') max = input;
-    else if (input == '3') max = input;
-    else if (input == '4') max = input;
+    if (input == '1') custom();
+    else if (input == '2') game(1, 30000);
+    else if (input == '3') game(1, 1000);
+    else if (input == '4') game(1, 100);
     else if (input == '5') end = true;
     else UP3();
   }
@@ -53,27 +54,98 @@ void custom()
     UP1();
     printf("  ------------------------------------------------------\n");
     printf("   Custom:\n");
-    printf("   Input two numbers between 1 and 999'999'999\n");
+    printf("   Input two numbers between 1 and 999'999\n");
+    printf("                       (Number 1 and Number 2)\n");
     printf("  ------------------------------------------------------\n\n");
     printf("   Number 1:\t");
     scanf_s(" %i", &number1);
     printf("   Number 2:\t");
     scanf_s(" %i", &number2);
-    if (number1 >= 1 && number1 <= 999999999 && number2 >= 1 && number2 <= 999999999) end = true;
+    if (number1 >= 1 && number1 <= 999999 && number2 >= 1 && number2 <= 999999 && number2 >= number1) end = true;
   }
-  game();
+  game(number1, number2);
 }
 
-void game()
+void game(int min, int max)
 {
-  printf("game here");
-  Sleep(1000);
-  Sleep(1000);
-  Sleep(1000);
-  Sleep(1000);
-  Sleep(1000);
+  int x = get_random(min, max);
+  int temp = 0;
+  bool end = false;
+  while (!end)
+  {
+    system("cls");
+    UP1();
+    printf("  ------------------------------------------------------\n");
+    printf("   My number is between %i and %i  \n", min, max);
+    printf("   Enter a number to reduce the possible range of numbers\n");
+    printf("   Find my number as quickly as possible.\n");
+    printf("  ------------------------------------------------------\n\n");
+    printf("   ( Number between %i and %i )\n", min, max);
+    printf("   ~$ ");
+    scanf_s("%i", &temp);
+    if (temp <= max && temp >= min) UP3();
+    else
+    {
+      if (temp == x) {}     //gewonnen
+      else if (temp <= x)
+      {
+        
+      
+      
+      }//grösser x
+      else if (temp >= x) {}//kleiner x
+    }
+  }
 
 
+
+
+  else if (flasche eingabe)
+
+
+    //lösung anzeige
+    if (eingabe == x)
+    {
+      printf("Sie haben es geschaft!\n");
+      printf("Die Gesuchte Zahl war %i\n", x);
+      if (count == 1)
+      {
+        printf("Sie haben %i Versuch Gebraucht\n\n\n", count);
+      }
+      else
+      {
+        printf("Sie haben %i Versuche Gebraucht\n\n\n", count);
+      }
+      end = 1;
+      system("pause");
+      system("cls");
+    }
+
+  //wenn grösser als x
+    else if (eingabe <= x)
+    {
+      printf("Die Zahl ist gr\x94sser als %i\n\n\n", eingabe);
+      min = eingabe;
+      system("pause");
+    }
+
+  //wenn kleiner als x
+    else if (eingabe >= x)
+    {
+      printf("Die Zahl ist kleiner als %i \n\n\n", eingabe);
+      max = eingabe;
+      system("pause");
+    }
+
+}
+
+
+
+}
+
+int get_random(int min, int max)
+{
+  return rand() % max + min;
 }
 
 void UP1()
