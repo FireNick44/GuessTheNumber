@@ -87,12 +87,7 @@ void game(int min, int max)
     else
     {
       if (temp == x) {}     //gewonnen
-      else if (temp <= x)
-      {
-        
-      
-      
-      }//grösser x
+      else if (temp <= x) {}//grösser x
       else if (temp >= x) {}//kleiner x
     }
   }
