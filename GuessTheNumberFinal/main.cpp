@@ -100,48 +100,45 @@ void game(int min, int max)
 
 
 
-  else if (flasche eingabe)
+  //else if (flasche eingabe)
 
 
-    //lösung anzeige
-    if (eingabe == x)
-    {
-      printf("Sie haben es geschaft!\n");
-      printf("Die Gesuchte Zahl war %i\n", x);
-      if (count == 1)
-      {
-        printf("Sie haben %i Versuch Gebraucht\n\n\n", count);
-      }
-      else
-      {
-        printf("Sie haben %i Versuche Gebraucht\n\n\n", count);
-      }
-      end = 1;
-      system("pause");
-      system("cls");
-    }
+  //  //lösung anzeige
+  //  if (eingabe == x)
+  //  {
+  //    printf("Sie haben es geschaft!\n");
+  //    printf("Die Gesuchte Zahl war %i\n", x);
+  //    if (count == 1)
+  //    {
+  //      printf("Sie haben %i Versuch Gebraucht\n\n\n", count);
+  //    }
+  //    else
+  //    {
+  //      printf("Sie haben %i Versuche Gebraucht\n\n\n", count);
+  //    }
+  //    end = 1;
+  //    system("pause");
+  //    system("cls");
+  //  }
 
-  //wenn grösser als x
-    else if (eingabe <= x)
-    {
-      printf("Die Zahl ist gr\x94sser als %i\n\n\n", eingabe);
-      min = eingabe;
-      system("pause");
-    }
+  ////wenn grösser als x
+  //  else if (eingabe <= x)
+  //  {
+  //    printf("Die Zahl ist gr\x94sser als %i\n\n\n", eingabe);
+  //    min = eingabe;
+  //    system("pause");
+  //  }
 
-  //wenn kleiner als x
-    else if (eingabe >= x)
-    {
-      printf("Die Zahl ist kleiner als %i \n\n\n", eingabe);
-      max = eingabe;
-      system("pause");
-    }
-
-}
-
-
+  ////wenn kleiner als x
+  //  else if (eingabe >= x)
+  //  {
+  //    printf("Die Zahl ist kleiner als %i \n\n\n", eingabe);
+  //    max = eingabe;
+  //    system("pause");
+  //  }
 
 }
+
 
 int get_random(int min, int max)
 {
