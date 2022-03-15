@@ -65,6 +65,7 @@ void custom()
     printf("   Number 2:\t");
     scanf_s(" %i", &number2);
     if (number1 >= 1 && number1 <= 999999 && number2 >= 1 && number2 <= 999999 && number2 >= number1) end = true;
+    else UP4();
   }
   game(number1, number2);
 }
