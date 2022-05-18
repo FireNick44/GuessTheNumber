@@ -60,8 +60,10 @@ void custom()
     printf("                       (Number 1 and Number 2)\n");
     printf("  ------------------------------------------------------\n\n");
     printf("   Number 1:\t 1\n");
+    
     number1 = 1;
     //scanf_s(" %i", &number1);
+    
     printf("   Number 2:\t");
     scanf_s(" %i", &number2);
     if (number1 >= 1 && number1 <= 999999 && number2 >= 1 && number2 <= 999999 && number2 >= number1) end = true;
