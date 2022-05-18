@@ -139,7 +139,7 @@ void UP1()
 void UP2()
 {
   printf("  ------------------------------------------------------\n");
-  printf("   We play a game, guess my number as fast as possible!\n");
+  printf("   We play a game, guess my number as fast as possible! \n");
   printf("   Choose your difficulty:\n");
   printf("  ------------------------------------------------------\n");
   printf("                \t        _       _\n");
