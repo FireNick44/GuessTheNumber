@@ -3,12 +3,12 @@
 #include <math.h>
 #include <cstdlib>
 #include <time.h>
+
 int UP1();
 int UP2();
 
 int main()
 {
-
   system("mode con cols=170 lines=40");
   system("color b");
 
